@@ -1,4 +1,4 @@
-#Welcome to the Cameo Development Documentation Wiki
+#Overview of the Cameo Development Documentation Wiki
 
 == Welcome to the Cameo Development Documentation Wiki ==
 
@@ -13,4 +13,3 @@ If you are unfamilary with theatrical lighting design consoles, it is recomended
  * [CameoArchitectureOverview Cameo Architecture Overview]
  * [CurrentStatus Current Status]
  * [FeatureList Feature List]
-
