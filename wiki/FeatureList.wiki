@@ -40,15 +40,15 @@
  * Everything Labeling - Cues, parts, effects, subs, macros, groups, profiles, channels, dimmers, etc....
 
 == Dreams ==
-* ability to load only a single or range of cues, groups, subs, patch, macros, effects from a saved show (and have it track (or not)).
+ * ability to load only a single or range of cues, groups, subs, patch, macros, effects from a saved show (and have it track (or not)).
 
-* pass variables to macros, ie: current cue, latest channel selected, default fade times.
+ * pass variables to macros, ie: current cue, latest channel selected, default fade times.
 so you could write a macro like:
 {{{
-   GROUP 1 RECORD CUE [$thiscue] LAST PART 7 TIME 6 WAIT [time of cue before $thiscue] ENTER
+   GROUP 1 RECORD CUE <thisCue> LAST PART 7 TIME 6 WAIT <time of cue before $thiscue> ENTER
 }}}
 
-* do math on the command line.  examples:
+ * do math on the command line.  examples:
 {{{
    CUE 1 > 7 TIME +4 ENTER
    GROUP 4 @ +20 ENTER
