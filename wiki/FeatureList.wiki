@@ -14,7 +14,7 @@
  * Faster Channel Rendering
  * Proportional Patch
  * Timed Auto Backup
- * Streamed Packaging
+ * Streamlined Packaging
 
 == Minimum Functionality for Public Beta Release ==
  * Blind Mode
