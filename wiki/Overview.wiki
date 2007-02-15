@@ -1,6 +1,6 @@
-#Overview of the Cameo Development Documentation Wiki
+#Overview of the Cameo Development Wiki
 
-== Welcome to the Cameo Development Documentation Wiki ==
+== Welcome to the Cameo Development Wiki ==
 
 This is the documentation resource for developers of the Cameo Lighting Console.
 
