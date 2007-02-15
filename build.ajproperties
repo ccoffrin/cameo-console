@@ -1,0 +1,5 @@
+src.includes = /
+src.excludes = Examples/,\
+               legasy/,\
+               doc/,\
+               Shows/
