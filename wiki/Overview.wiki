@@ -1,0 +1,16 @@
+#Welcome to the Cameo Development Documentation Wiki
+
+== Welcome to the Cameo Development Documentation Wiki ==
+
+This is the documentation resource for developers of the Cameo Lighting Console.
+
+If you are unfamilary with theatrical lighting design consoles, it is recomended to review the [http://wiki.cameocontrol.com/ Cameo Lighting Console Wiki]
+
+
+== Contents ==
+
+ * [CameoDevelopmentSetup Cameo Development Setup]
+ * [CameoArchitectureOverview Cameo Architecture Overview]
+ * [CurrentStatus Current Status]
+ * [FeatureList Feature List]
+
