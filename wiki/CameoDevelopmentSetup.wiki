@@ -1,4 +1,4 @@
-#Instructions on how to setup the Cameo environment 
+#Instructions for setting up the Cameo environment
 
 == Overview ==
 Several technologies are required to begin working on Cameo.  The minimum set of applications required to develop Cameo is as follows:
@@ -35,7 +35,7 @@ You will need to install a Subversion client and request access to the code repo
 Sign up as a developer at http://code.google.com/p/cameo-console/.
 
 === Testing ===
-Once you have a user name and login setup, you can test your connection to the SVN server with the following command:
+Once you have a user name and login set up, you can test your connection to the SVN server with the following command:
 
 `svn list https://cameo-console.googlecode.com/svn/trunk/`
 
