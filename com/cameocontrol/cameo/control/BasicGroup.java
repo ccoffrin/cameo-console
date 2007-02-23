@@ -21,39 +21,38 @@
 
 package com.cameocontrol.cameo.control;
 
-import com.cameocontrol.cameo.file.adt.CueListData;
-import com.cameocontrol.cameo.resource.Resource;
+import com.cameocontrol.cameo.file.adt.GroupData;
 
-/// List of cue tranistions with a pointer to the current cue
-public interface ConsoleCueList extends Resource<CueListData>, Iterable<ConsoleFade> {
+public abstract class BasicGroup implements ConsoleGroup {
+	protected int _number; 
+	protected ConsoleCue _cue;
 
-	public void clearCues();
+	protected BasicGroup(int n,  ConsoleCue cue){
+		_number = n;
+		_cue = cue;
+	}
+
+	public int getNumber() {return _number;}
 	
-	public void recordTracking(ConsoleFade newCue);
-	public void updateTracking(ConsoleFade newCue);
+	public ConsoleCue getCue() {return _cue;}
+
+	public String toString(){
+		return _number+" "+_cue.getDiscription();
+	}
 	
-	public void addTracking(ConsoleFade newCue, boolean merge);
-	
-	public void addCueOnly(ConsoleFade c);
-	
-	//TODO: impliment this
-	public void removeTracking(ConsoleFade c) ;
-	
-	public void removeCueOnly(ConsoleFade c);
-	
-	public boolean isCurrentCue(ConsoleFade c);
-	
-	public ConsoleFade getCurrentCue();
-	public void setCurrentCue(ConsoleFade c);
-	
-	public ConsoleFade getCueNumbered(int x);
-	
-	public int size();
-	
-	public int getNextCueNumber();
-	
-	public ConsoleFade getNextCue();
-	
-	public ConsoleFade getPrevCue();
-	
+	public GroupData distill() {
+		GroupData fd = new GroupData(
+				_number, 
+				_cue.distill()
+			);
+		
+		return fd;
+	}
+
+	public void extractFrom(GroupData data) {
+		_number = data.getGroupNumber();
+		CameoCue cue = new CameoCue();
+		cue.extractFrom(data.getCue());
+		_cue = cue;
+	}
 }

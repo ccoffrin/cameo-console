@@ -19,41 +19,13 @@
  *  
  *************************************************************************************/
 
-package com.cameocontrol.cameo.control;
+package com.cameocontrol.cameo.file.adt;
 
-import com.cameocontrol.cameo.file.adt.CueListData;
-import com.cameocontrol.cameo.resource.Resource;
+import java.util.Vector;
 
-/// List of cue tranistions with a pointer to the current cue
-public interface ConsoleCueList extends Resource<CueListData>, Iterable<ConsoleFade> {
-
-	public void clearCues();
+public class GroupListData extends Vector<GroupData> implements Data {
+	private int _totalGroups;
 	
-	public void recordTracking(ConsoleFade newCue);
-	public void updateTracking(ConsoleFade newCue);
-	
-	public void addTracking(ConsoleFade newCue, boolean merge);
-	
-	public void addCueOnly(ConsoleFade c);
-	
-	//TODO: impliment this
-	public void removeTracking(ConsoleFade c) ;
-	
-	public void removeCueOnly(ConsoleFade c);
-	
-	public boolean isCurrentCue(ConsoleFade c);
-	
-	public ConsoleFade getCurrentCue();
-	public void setCurrentCue(ConsoleFade c);
-	
-	public ConsoleFade getCueNumbered(int x);
-	
-	public int size();
-	
-	public int getNextCueNumber();
-	
-	public ConsoleFade getNextCue();
-	
-	public ConsoleFade getPrevCue();
-	
+	public void setTotalGroups(int totalGroups) {_totalGroups = totalGroups;}
+	public int getTotalGroups() {return _totalGroups;}
 }
