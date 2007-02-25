@@ -33,7 +33,7 @@ import com.cameocontrol.cameo.control.ConsoleTimeing;
 
 import dmx.DMX;
 import dmx.DMXStub;
-import dmx.StraightDMX;
+import dmx.SimpleDMX;
 
 public class CameoOutputManager implements OutputManager {
 	private LiveCue _live;

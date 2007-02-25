@@ -5,10 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
 	<classpathentry sourcepath="ANTLR_HOME/antlrsrc.zip" kind="var" path="ANTLR_HOME/antlr.jar"/>
 	<classpathentry kind="lib" path="jgraph.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/Simple_DMX_Java">
-		<attributes>
-			<attribute value="Simple_DMX_Java" name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/Simple_DMX_Java"/>
 	<classpathentry kind="output" path=""/>
 </classpath>

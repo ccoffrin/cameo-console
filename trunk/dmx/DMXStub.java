@@ -123,9 +123,9 @@ public class DMXStub implements DMX{
 	public boolean isSimulation() {
 		return true;
 	}
-	public int stopFade() {
+	public boolean stopFade() {
 		// TODO Auto-generated method stub
-		return 0;
+		return true;
 	}
 	public boolean clearProportionalOutput(int index) {
 		// TODO Auto-generated method stub
