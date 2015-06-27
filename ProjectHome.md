@@ -1,0 +1,3 @@
+Designed with theatrical lighting design in mind, Cameo provides lighting controls common to Cue based light boards.  Cameo is designed to provide young designers and smaller venues an alternative to expensive lighting consoles without sacrificing artistic freedom.
+
+Cameo requires the [ENTTEC](http://www.enttec.com/) [Open DMX USB Interface](http://www.enttec.com/index.php?menu=Products&prod=70303&show=description&name=opendmxusb) to connect to lighting hardware, but can run in a simulation mode without any hardware.
